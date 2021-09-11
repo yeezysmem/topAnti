@@ -1,0 +1,463 @@
+// @import "../styles/variables.scss";
+
+body {
+  background: #222229;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+header {
+  border-bottom: 3px solid #3ae388;
+  top: -5px;
+  background: #222634;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  .active {
+    background: #000;
+  }
+  .nav {
+    padding-top: 20px;
+    .logo {
+        &:hover {
+            color: #3AE388;
+        }
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      font-weight: 300;
+      font-size: 20px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      padding: 0 10px;
+      padding-top: 3px;
+
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        &:hover {
+          color: #3ae388;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  margin-top: 100px;
+  .pa {
+    &::before {
+      content: " ";
+      width: 100%;
+      background-repeat: no-repeat;
+      height: 100px;
+      background-image: url(../images/Lingkaran.svg);
+      position: relative;
+      left: 60px;
+    }
+  }
+  &-card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 523px;
+    background: #24252e;
+    border-radius: 20px;
+    img {
+      border-bottom: 10px solid #3ae388;
+      border-radius: 0 0 10px 10px;
+    }
+    &__content {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 15px;
+      article {
+        font-size: 19px;
+        line-height: 26px;
+        /* or 137% */
+
+        color: rgba(255, 255, 255, 0.51);
+      }
+    }
+  }
+  &-content {
+    padding-top: 130px;
+    h1 {
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 87px;
+
+      color: #ffffff;
+    }
+    p {
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+    }
+  }
+}
+
+.antiviruses {
+  margin-top: 100px;
+  h1 {
+    font-weight: 600;
+    span {
+      font-weight: 800;
+      color: #3ae388;
+    }
+  }
+  &-box {
+    margin-top: 30px;
+    background: #000000;
+    height: 346px;
+    background: radial-gradient(
+      135.89% 753.18% at -8.19% -11.95%,
+      #282831 0%,
+      rgba(40, 40, 49, 0) 100%
+    );
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    &__image {
+      margin-left: 30px;
+      margin-top: 39px;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 177px;
+      height: 185px;
+
+      background: #2f2f37;
+      border-radius: 12px;
+    }
+    &__content {
+      .button {
+        margin-top: 40px;
+      }
+      h3 {
+        color: #d5702e;
+        font-weight: 600;
+      }
+      p {
+        font-size: 17px;
+        line-height: 26px;
+        /* identical to box height, or 153% */
+
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 300;
+      }
+      padding-top: 39px;
+      padding-left: 50px;
+    }
+  }
+}
+
+.download {
+    margin:200px 0;
+  h3 {
+    position: relative;
+    top: 150px;
+    color: #fff;
+  }
+  &-table {
+    .box {
+      border-top: 1px solid #333333;
+
+      .title {
+        padding: 11px 0;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+      }
+      .small-title {
+        font-size: 17px;
+        line-height: 24px;
+        /* identical to box height, or 141% */
+
+        color: #fff;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &-content {
+      &__image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 20px;
+      }
+    &__card {
+      &-header {
+        background: #2fa6b1;
+        height: 54px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        color: #fff;
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 15px;
+          font-weight: 300;
+        }
+      }
+      &-item {
+        background: #dfefef;
+
+        p {
+          padding-top: 5px;
+          display: flex;
+          justify-content: center;
+          color: #424d56;
+          line-height: 20px;
+          font-size: 17px;
+          font-weight: normal;
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          font-size: 13px;
+          line-height: 19px;
+          color: #008193;
+          padding-bottom: 10px;
+        }
+      }
+      &-footer {
+        margin-bottom: 50px;
+        background: #dfefef;
+        height: 110px;
+        width: 195.5px;
+        position: relative;
+        left: 19.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0px 0px 20px 20px;
+        .green-btn {
+          background: #3ae388;
+          border: none;
+          padding: 6px 20px;
+          border-radius: 20px;
+          color: #fff;
+          &:hover {
+            transition: 0.3s;
+            background: #fff;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #3b3b3b;
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-adress {
+    text-align: center;
+    span {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+.partners {
+  border-top: 2px solid #3ae388;
+  border-bottom: 2px solid #3ae388;
+  background: #33333d;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &-item {
+    &__image {
+      height: 100px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__content {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      p {
+        width: 200px;
+      }
+    }
+  }
+}
+
+.check {
+  font-weight: normal;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  span {
+    padding-left: 10px;
+  }
+}
+
+.button {
+    &:hover {
+        transition: all 0.3s;
+        opacity: 1;
+    }
+    opacity: 0.8;
+    
+  padding: 11px 36px;
+  border-radius: 29px;
+  border: none;
+  color: #fff;
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.review-card {
+  margin-top: 100px;
+  height: 346px;
+  background: #25252d;
+  border: 2px dashed #3ae388;
+  box-sizing: border-box;
+
+  border-radius: 20px;
+  &__avatar {
+    padding-top: 39px;
+    padding-left: 20px;
+  }
+  &__content {
+    padding-top: 69px;
+    padding-left: 15px;
+    h5 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    article {
+      font-size: 20px;
+      /* identical to box height, or 225% */
+
+      color: rgba(255, 255, 255, 0.51);
+    }
+  }
+  &__descr {
+    padding-top: 10px;
+    padding-left: 20px;
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+    }
+    article {
+      font-size: 20px;
+      line-height: 25px;
+      /* or 225% */
+
+      color: rgba(255, 255, 255, 0.51);
+    }
+  }
+}
+
+.footer {
+  .footer-content {
+    font-weight: 300;
+  }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #222229;
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-adress {
+    text-align: center;
+    span {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+
+.avg-title {
+    h3 {
+        color:#d5702e;
+    }
+ 
+}
+.mal-title {
+    h3 {
+        color:#256cfd;
+    }
+}
+.kasp-title {
+    h3 {
+        color:#e30016 ;
+    }
+}
+.eset-title {
+    h3 {
+        color:#0094a1 ;
+    }
+}
+.avg-btn {
+  background-color: #d5702e;
+}
+.mal-btn {
+  background-color: #256cfd;
+}
+.kasp-btn {
+  background-color: #e30016;
+}
+.eset-btn {
+  background-color: #0094a1;
+}
+
+.f-right {
+  float: right;
+}
+
+.blue {
+  color: #256cfd;
+}
