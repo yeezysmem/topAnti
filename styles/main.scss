@@ -304,6 +304,7 @@ header {
   background: #33333d;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 100px;
   &-item {
     &__image {
       height: 100px;
@@ -345,7 +346,7 @@ header {
         opacity: 1;
     }
     opacity: 0.8;
-    
+
   padding: 11px 36px;
   border-radius: 29px;
   border: none;
@@ -355,8 +356,9 @@ header {
   }
 }
 
+
 .review-card {
-  margin-top: 100px;
+  margin: 100px 0;
   height: 346px;
   background: #25252d;
   border: 2px dashed #3ae388;
@@ -424,7 +426,7 @@ header {
     h3 {
         color:#d5702e;
     }
- 
+
 }
 .mal-title {
     h3 {
